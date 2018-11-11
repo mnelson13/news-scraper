@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsScraper";
+let MONGODB_URI = process.env.MONGOLAB_AMBER_URI || "mongodb://localhost/newsScraper";
 mongoose.connect(MONGODB_URI);
 
 let exphbs = require("express-handlebars");
