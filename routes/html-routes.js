@@ -2,7 +2,7 @@ let db = require('../models');
 
 module.exports = function(app){
 
-    app.get("*", function(req, res){
+    app.get("/", function(req, res){
         db.Article.find({}).sort({created: -1})
         .populate("comments")
         .then((result) => {
