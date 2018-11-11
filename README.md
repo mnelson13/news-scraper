@@ -1,7 +1,7 @@
 # News Scraper
 
 ### Link to Deployed Project:
-* 
+* https://mongo-scraper-66025.herokuapp.com/
 
 ### Instructions/Features:
 * News stories are pulled from a database and rendered on the page.
