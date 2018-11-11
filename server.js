@@ -14,7 +14,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.Promise = Promise;
 let MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/newsScraper";
 mongoose.connect(MONGODB_URI);
 
