@@ -21,8 +21,7 @@ body {
     padding: 0 30px;
 }
 .delete {
-    float: right;
-    margin: 5px;
+    margin: 5px 0;
 }
 h5 {
     padding-bottom: 10px;
