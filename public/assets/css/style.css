@@ -2,9 +2,18 @@ body {
     background-image: url("../images/greyzz_@2X.png");
     font-family: 'Open Sans', sans-serif;
 }
-#banner {
+#bannerImg {
     width: 100%;
-    border-radius: 5px !important;
+}
+.banner {
+    position: relative;
+}
+.title {
+    position: absolute;
+    top: 10%;
+    right: 30px;
+    color: white;
+    text-shadow: 2px 2px 8px #6e6b6b;
 }
 .article {
     background-color: white;
@@ -23,7 +32,30 @@ body {
 .delete {
     margin: 5px 0;
 }
+h2 {
+    color: #797676;
+    text-shadow: 2px 2px 8px #dad5d5;
+}
 h5 {
     padding-bottom: 10px;
     font-family: 'Proza Libre', sans-serif;
+}
+.notSelected,
+.selected {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 30px !important;
+    }
+    h3 {
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #bannerImg {
+        height: 200px;
+    }
 }

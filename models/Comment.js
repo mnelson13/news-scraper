@@ -3,7 +3,10 @@ let mongoose = require("mongoose");
 let Schema = mongoose.Schema;
 
 let CommentSchema = new Schema({
-    text: String
+    text: {
+        type: String,
+        required: true
+    }
 });
 
 let Comment = mongoose.model("Comment", CommentSchema);

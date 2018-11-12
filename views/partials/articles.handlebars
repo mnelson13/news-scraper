@@ -1,0 +1,47 @@
+<div class="row z-depth-4 article">
+    <div class="col m12">
+        <a href="{{this.link}}" target="_blank"><h5>{{this.title}}</h5></a>
+        <div class="row">
+            <div class="col l4 imgDiv center-align" data-imgid="{{this._id}}">
+                <img class="articleImg responsive-img z-depth-3" src="{{this.photo}}" alt="story image">
+            </div>
+            <div class="col l6">
+                <p>{{this.summary}}</p>
+            </div>
+            <div class="col l2">
+                
+            </div>
+        </div>
+        <div class="row">
+            <form data-id="{{this._id}}" class="col s12 commentForm">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="{{this._id}}" class="materialize-textarea"></textarea>
+                        <label for="{{this._id}}">Leave a Comment</label>
+                        <button class="btn waves-effect waves-light btn-small" type="submit" name="action">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col m12">
+                    <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">textsms</i>See Comments</div>
+                        
+                        <div class="collapsible-body">
+                            <span>
+                            {{#each this.comments}}
+                                {{this.text}}<br><button data-id="{{this._id}}" class="btn waves-effect waves-light btn-small delete">Delete Comment</button><hr>
+                            {{/each}}
+                            </span>
+                        </div>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

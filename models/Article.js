@@ -20,6 +20,10 @@ let ArticleSchema = new Schema({
     photo: {
         type: String
     },
+    saved: {
+        type: Boolean,
+        default: false
+    },
     created: {
         type: Date,
         default: Date.now
