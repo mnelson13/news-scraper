@@ -26,7 +26,7 @@ $(document).ready(function(){
         let id = $(this).attr("data-id");
 
         $.ajax({
-            method: "GET",
+            method: "PUT",
             url: "/article/save/" + id
         }).then(function(data){
             location.reload();
@@ -42,7 +42,7 @@ $(document).ready(function(){
         let id = $(this).attr("data-id");
 
         $.ajax({
-            method: "GET",
+            method: "PUT",
             url: "/article/unsave/" + id
         }).then(function(data){
             location.reload();

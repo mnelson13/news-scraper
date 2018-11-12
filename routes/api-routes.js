@@ -73,7 +73,7 @@ module.exports = function(app){
     })
 
     //route to update saved to true for an article
-    app.get("/article/save/:id", function(req, res){
+    app.put("/article/save/:id", function(req, res){
         db.Article.update({"_id": mongojs.ObjectId(req.params.id)}, {$set: {"saved": true}}, function(err,data){
             if(err){
               console.log(err);
@@ -84,7 +84,7 @@ module.exports = function(app){
     })
 
     //route to update saved to false for an article
-    app.get("/article/unsave/:id", function(req, res){
+    app.put("/article/unsave/:id", function(req, res){
         db.Article.update({"_id": mongojs.ObjectId(req.params.id)}, {$set: {"saved": false}}, function(err,data){
             if(err){
               console.log(err);
