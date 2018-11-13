@@ -80,7 +80,7 @@ module.exports = function(app){
             } else {
               res.json(data);
             }
-          })
+        })
     })
 
     //route to update saved to false for an article
@@ -91,8 +91,7 @@ module.exports = function(app){
             } else {
               res.json(data);
             }
-          })
+        })
     })
-
 
 }

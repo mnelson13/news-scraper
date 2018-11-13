@@ -48,7 +48,6 @@ $(document).ready(function(){
             location.reload();
         })
         
-        
     });
 
     //creates a new comment
