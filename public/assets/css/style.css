@@ -44,6 +44,10 @@ h5 {
 .selected {
     margin-top: 10px;
 }
+.notSelected:hover,
+.selected:hover {
+    cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
     h1 {
